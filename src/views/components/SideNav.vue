@@ -5,78 +5,163 @@
         <nav class="sidenav shadow-right sidenav-light">
           <div class="sidenav-menu">
             <div class="nav accordion" id="accordionSidenav">
-              <div class="sidenav-menu-heading">Dashboard</div>
+              <div class="sidenav-menu-heading">POS</div>
               <!-- Sidenav Link (Charts)-->
-              <a class="nav-link" href="charts.html">
+              <router-link class="nav-link" to="/pos">
                 <div class="nav-link-icon">
                   <i data-feather="bar-chart"></i>
                 </div>
+                POS
+              </router-link>
+
+              <div class="sidenav-menu-heading">Dashboard</div>
+              <!-- Sidenav Link (Charts)-->
+              <router-link class="nav-link" to="/dashboard">
+                <div class="nav-link-icon">
+                  <i data-feather="grid"></i>
+                </div>
                 Dashboard
-              </a>
-              <!-- * * Note: * * Visible only on and above the sm breakpoint-->
-              <div class="sidenav-menu-heading d-sm-none">Account</div>
-              <!-- Sidenav Link (Alerts)-->
-              <!-- * * Note: * * Visible only on and above the sm breakpoint-->
-              <a class="nav-link d-sm-none" href="#!">
-                <div class="nav-link-icon"><i data-feather="bell"></i></div>
-                Alerts
-                <span class="badge bg-warning-soft text-warning ms-auto"
-                  >4 New!</span
-                >
-              </a>
-              <!-- Sidenav Link (Messages)-->
-              <!-- * * Note: * * Visible only on and above the sm breakpoint-->
-              <a class="nav-link d-sm-none" href="#!">
-                <div class="nav-link-icon"><i data-feather="mail"></i></div>
-                Messages
-                <span class="badge bg-success-soft text-success ms-auto"
-                  >2 New!</span
-                >
-              </a>
-              <!-- Sidenav Menu Heading (Core)-->
-              <div class="sidenav-menu-heading">Core</div>
-              <!-- Sidenav Accordion (Dashboard)-->
+              </router-link>
+
+              <!-- Sidenav Accordion (sales)-->
               <a
                 class="nav-link collapsed"
                 href="javascript:void(0);"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseDashboards"
+                data-bs-target="#Sales"
                 aria-expanded="false"
-                aria-controls="collapseDashboards"
+                aria-controls="Sales"
               >
                 <div class="nav-link-icon"><i data-feather="activity"></i></div>
-                Dashboards
+                Penjualan
                 <div class="sidenav-collapse-arrow">
                   <i class="fas fa-angle-down"></i>
                 </div>
               </a>
               <div
                 class="collapse"
-                id="collapseDashboards"
+                id="Sales"
                 data-bs-parent="#accordionSidenav"
               >
                 <nav
                   class="sidenav-menu-nested nav accordion"
                   id="accordionSidenavPages"
                 >
-                  <a class="nav-link" href="dashboard-1.html">
-                    Default
-                    <span class="badge bg-primary-soft text-primary ms-auto"
-                      >Updated</span
-                    >
-                  </a>
-                  <a class="nav-link" href="dashboard-3.html">Affiliate</a>
+                  <router-link class="nav-link" to="/penjualan">
+                    Penjualan Hari ini
+                  </router-link>
+                </nav>
+              </div>
+              <!-- Sidenav Accordion (Report)-->
+              <a
+                class="nav-link collapsed"
+                href="javascript:void(0);"
+                data-bs-toggle="collapse"
+                data-bs-target="#Report"
+                aria-expanded="false"
+                aria-controls="Report"
+              >
+                <div class="nav-link-icon"><i data-feather="activity"></i></div>
+                Laporan
+                <div class="sidenav-collapse-arrow">
+                  <i class="fas fa-angle-down"></i>
+                </div>
+              </a>
+              <div
+                class="collapse"
+                id="Report"
+                data-bs-parent="#accordionSidenav"
+              >
+                <nav
+                  class="sidenav-menu-nested nav accordion"
+                  id="accordionSidenavPages"
+                >
+                  <router-link class="nav-link" to="/laporan">
+                    Laporan Penjualan
+                  </router-link>
+                </nav>
+              </div>
+
+              <!-- Sidenav Accordion (Products)-->
+              <a
+                class="nav-link collapsed"
+                href="javascript:void(0);"
+                data-bs-toggle="collapse"
+                data-bs-target="#Products"
+                aria-expanded="false"
+                aria-controls="Products"
+              >
+                <div class="nav-link-icon"><i data-feather="activity"></i></div>
+                Produk
+                <div class="sidenav-collapse-arrow">
+                  <i class="fas fa-angle-down"></i>
+                </div>
+              </a>
+              <div
+                class="collapse"
+                id="Products"
+                data-bs-parent="#accordionSidenav"
+              >
+                <nav
+                  class="sidenav-menu-nested nav accordion"
+                  id="accordionSidenavPages"
+                >
+                  <router-link class="nav-link" to="/produk">
+                    Daftar Produk
+                  </router-link>
+                </nav>
+              </div>
+              <!-- Sidenav Accordion (Bahan)-->
+              <a
+                class="nav-link collapsed"
+                href="javascript:void(0);"
+                data-bs-toggle="collapse"
+                data-bs-target="#Bahan"
+                aria-expanded="false"
+                aria-controls="Bahan"
+              >
+                <div class="nav-link-icon"><i data-feather="activity"></i></div>
+                Bahan
+                <div class="sidenav-collapse-arrow">
+                  <i class="fas fa-angle-down"></i>
+                </div>
+              </a>
+              <div
+                class="collapse"
+                id="Bahan"
+                data-bs-parent="#accordionSidenav"
+              >
+                <nav
+                  class="sidenav-menu-nested nav accordion"
+                  id="accordionSidenavPages"
+                >
+                  <router-link class="nav-link" to="/bahan">
+                    Daftar Bahan Mentah
+                  </router-link>
+                  <router-link class="nav-link" to="/bahan/pembelian">
+                    Pembelian Bahan Mentah
+                  </router-link>
+                  <router-link class="nav-link" to="/bahan/persediaan">
+                    Persediaan Bahan Mentah
+                  </router-link>
                 </nav>
               </div>
               <!-- Sidenav Heading (Addons)-->
-              <div class="sidenav-menu-heading">Plugins</div>
-              <!-- Sidenav Link (Charts)-->
-              <a class="nav-link" href="charts.html">
+              <div class="sidenav-menu-heading">Tambahan</div>
+              <router-link class="nav-link" to="/pengajuan">
                 <div class="nav-link-icon">
                   <i data-feather="bar-chart"></i>
                 </div>
-                Charts
-              </a>
+                Pengajuan
+              </router-link>
+              <!-- Sidenav Link (Setting)-->
+              <router-link class="nav-link" to="/setting">
+                <div class="nav-link-icon">
+                  <i data-feather="bar-chart"></i>
+                </div>
+                Settings
+              </router-link>
+              <!-- Sidenav Heading (Addons)-->
             </div>
           </div>
           <!-- Sidenav Footer-->
@@ -89,7 +174,7 @@
         </nav>
       </div>
       <div id="layoutSidenav_content">
-        <DashboardPage />
+        <router-view />
         <footer class="footer-admin mt-auto footer-light">
           <div class="container-xl px-4">
             <div class="row">
@@ -109,11 +194,8 @@
   </div>
 </template>
 <script>
-import DashboardPage from "./../pages/dashboard/DashboardPage.vue";
 export default {
   name: "SideNav",
-  components: {
-    DashboardPage,
-  },
+  components: {},
 };
 </script>

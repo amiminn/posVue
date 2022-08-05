@@ -12,7 +12,7 @@
                   <div class="page-header-icon">
                     <i data-feather="sunset"></i>
                   </div>
-                  Dashboard
+                  Produk
                 </h1>
                 <div class="page-header-subtitle">
                   Shadow utilities add depth and elevation to your content
