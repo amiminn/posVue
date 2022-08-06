@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import IndexView from "../views/IndexView.vue";
+// import IndexView from "../views/IndexView.vue";
 import LoginPage from "../views/pages/login/LoginPage.vue";
 import PosPage from "../views/pages/pos/PosPage.vue";
 import DashboardPage from "../views/pages/dashboard/DashboardPage.vue";
@@ -16,7 +16,7 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: IndexView,
+    component: DashboardPage,
   },
   {
     path: "/login",

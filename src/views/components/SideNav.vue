@@ -9,7 +9,7 @@
               <!-- Sidenav Link (Charts)-->
               <router-link class="nav-link" to="/pos">
                 <div class="nav-link-icon">
-                  <i data-feather="bar-chart"></i>
+                  <i class="fas fa-store"></i>
                 </div>
                 POS
               </router-link>
@@ -18,7 +18,7 @@
               <!-- Sidenav Link (Charts)-->
               <router-link class="nav-link" to="/dashboard">
                 <div class="nav-link-icon">
-                  <i data-feather="grid"></i>
+                  <i class="fas fa-home"></i>
                 </div>
                 Dashboard
               </router-link>
@@ -32,7 +32,9 @@
                 aria-expanded="false"
                 aria-controls="Sales"
               >
-                <div class="nav-link-icon"><i data-feather="activity"></i></div>
+                <div class="nav-link-icon">
+                  <i class="fas fa-cart-shopping"></i>
+                </div>
                 Penjualan
                 <div class="sidenav-collapse-arrow">
                   <i class="fas fa-angle-down"></i>
@@ -61,7 +63,9 @@
                 aria-expanded="false"
                 aria-controls="Report"
               >
-                <div class="nav-link-icon"><i data-feather="activity"></i></div>
+                <div class="nav-link-icon">
+                  <i class="fas fa-file"></i>
+                </div>
                 Laporan
                 <div class="sidenav-collapse-arrow">
                   <i class="fas fa-angle-down"></i>
@@ -91,7 +95,7 @@
                 aria-expanded="false"
                 aria-controls="Products"
               >
-                <div class="nav-link-icon"><i data-feather="activity"></i></div>
+                <div class="nav-link-icon"><i class="fas fa-box"></i></div>
                 Produk
                 <div class="sidenav-collapse-arrow">
                   <i class="fas fa-angle-down"></i>
@@ -120,7 +124,9 @@
                 aria-expanded="false"
                 aria-controls="Bahan"
               >
-                <div class="nav-link-icon"><i data-feather="activity"></i></div>
+                <div class="nav-link-icon">
+                  <i class="fas fa-shopping-basket"></i>
+                </div>
                 Bahan
                 <div class="sidenav-collapse-arrow">
                   <i class="fas fa-angle-down"></i>
@@ -150,16 +156,16 @@
               <div class="sidenav-menu-heading">Tambahan</div>
               <router-link class="nav-link" to="/pengajuan">
                 <div class="nav-link-icon">
-                  <i data-feather="bar-chart"></i>
+                  <i class="fas fa-bell"></i>
                 </div>
                 Pengajuan
               </router-link>
               <!-- Sidenav Link (Setting)-->
               <router-link class="nav-link" to="/setting">
                 <div class="nav-link-icon">
-                  <i data-feather="bar-chart"></i>
+                  <i class="fas fa-cogs"></i>
                 </div>
-                Settings
+                Pengaturan
               </router-link>
               <!-- Sidenav Heading (Addons)-->
             </div>

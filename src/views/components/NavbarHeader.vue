@@ -52,13 +52,13 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#!">
               <div class="dropdown-item-icon">
-                <i data-feather="settings"></i>
+                <i class="fas fa-cog"></i>
               </div>
               Account
             </a>
             <a class="dropdown-item" href="#!">
               <div class="dropdown-item-icon">
-                <i data-feather="log-out"></i>
+                <i class="fas fa-sign-out"></i>
               </div>
               Logout
             </a>
