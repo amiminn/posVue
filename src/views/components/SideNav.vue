@@ -14,9 +14,9 @@
                 POS
               </router-link>
 
-              <div class="sidenav-menu-heading">Dashboard</div>
+              <div class="sidenav-menu-heading">Dashboard {{ isActive }}</div>
               <!-- Sidenav Link (Charts)-->
-              <router-link class="nav-link" to="/dashboard">
+              <router-link class="nav-link" to="/">
                 <div class="nav-link-icon">
                   <i class="fas fa-home"></i>
                 </div>
@@ -202,6 +202,16 @@
 <script>
 export default {
   name: "SideNav",
+  data() {
+    return {
+      isActive: false,
+    };
+  },
+  methods: {
+    myFilter() {
+      this.isActive = !this.isActive;
+    },
+  },
   components: {},
 };
 </script>

@@ -1,14 +1,10 @@
 <template>
   <div>
-    <IndexView />
+    <router-view />
   </div>
 </template>
 <script>
-import IndexView from "./views/IndexView.vue";
 export default {
   name: "App",
-  components: {
-    IndexView,
-  },
 };
 </script>

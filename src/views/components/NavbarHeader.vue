@@ -9,7 +9,7 @@
         class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0"
         id="sidebarToggle"
       >
-        <i data-feather="menu"></i>
+        <i class="fas fa-bars"></i>
       </button>
       <!-- Navbar Brand-->
       <!-- * * Tip * * You can use text or an image for your navbar brand.-->
@@ -56,12 +56,12 @@
               </div>
               Account
             </a>
-            <a class="dropdown-item" href="#!">
+            <button class="dropdown-item">
               <div class="dropdown-item-icon">
                 <i class="fas fa-sign-out"></i>
               </div>
               Logout
-            </a>
+            </button>
           </div>
         </li>
       </ul>
@@ -69,6 +69,7 @@
   </div>
 </template>
 <script>
+// import { useRouter } from "vue-router";
 export default {
   name: "NavbarHeader",
 };

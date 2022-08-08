@@ -20,23 +20,7 @@
         <div class="card mb-4">
           <div class="card-header">Area Chart Example</div>
           <div class="card-body">
-            <div class="chart-area">
-              <div class="chartjs-size-monitor">
-                <div class="chartjs-size-monitor-expand">
-                  <div class=""></div>
-                </div>
-                <div class="chartjs-size-monitor-shrink">
-                  <div class=""></div>
-                </div>
-              </div>
-              <canvas
-                id="myAreaChart"
-                width="765"
-                height="240"
-                style="display: block; width: 765px; height: 240px"
-                class="chartjs-render-monitor"
-              ></canvas>
-            </div>
+            <!-- <highcharts :options="chartOptions"></highcharts> -->
           </div>
           <div class="card-footer small text-muted">
             Updated yesterday at 11:59 PM
@@ -49,5 +33,16 @@
 <script>
 export default {
   name: "DashboardPage",
+  data() {
+    return {
+      chartOptions: {
+        series: [
+          {
+            data: [1, 2, 3], // sample data
+          },
+        ],
+      },
+    };
+  },
 };
 </script>
