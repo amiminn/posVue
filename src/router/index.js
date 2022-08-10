@@ -59,12 +59,12 @@ const routes = [
         component: BahanMentah,
       },
       {
-        path: "/bahan/pembelian",
+        path: "/pembelian",
         name: "Pembelian",
         component: PembelianBahanMentah,
       },
       {
-        path: "/bahan/persediaan",
+        path: "//persediaan",
         name: "Persediaan",
         component: PersediaanBahanMentah,
       },

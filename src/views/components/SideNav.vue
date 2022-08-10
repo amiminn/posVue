@@ -144,11 +144,11 @@
                   <router-link class="nav-link" to="/bahan">
                     Daftar Bahan Mentah
                   </router-link>
-                  <router-link class="nav-link" to="/bahan/pembelian">
-                    Pembelian Bahan Mentah
+                  <router-link class="nav-link" to="/pembelian">
+                    Purchase Bahan Mentah
                   </router-link>
-                  <router-link class="nav-link" to="/bahan/persediaan">
-                    Persediaan Bahan Mentah
+                  <router-link class="nav-link" to="/persediaan">
+                    Inventory Bahan Mentah
                   </router-link>
                 </nav>
               </div>
